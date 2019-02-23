@@ -1,0 +1,48 @@
+{
+  "name": "qudarsky-portfolio",
+  "version": "1.0.0",
+  "description": "Frontend for Qudarsy Portfolio",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "vue": "^2.6.7",
+    "vue-axios": "^2.1.4",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.21",
+    "normalize-scss": "^7.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "vue-loader": "^15.6.4",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.7",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "mini-css-extract-plugin": "^0.5.0",
+    "resolve-url-loader": "^2.3.1",
+    "vue-lazyload": "^1.2.6"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "watch": "cross-env NODE_ENV=development webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martins-Cudars/martins-cudars.github.io.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "Qudarsky",
+    "FrontEnd"
+  ],
+  "author": "Martins Cudars",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Martins-Cudars/martins-cudars.github.io/issues"
+  },
+  "homepage": "https://github.com/Martins-Cudars/martins-cudars.github.io"
+}
