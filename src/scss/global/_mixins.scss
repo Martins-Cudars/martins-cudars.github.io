@@ -1,0 +1,27 @@
+@mixin media($break) {
+  $value: map-get($breakpoints, $break);
+  // border: $value;
+
+  @if $value == null {
+    @error "#{$break} is not a valid breakpoint name";
+  } 
+  
+  @media (min-width: $value) {
+    @content;
+  }
+
+}
+
+
+
+@mixin fs($size) {
+  $value: map-get($font-sizes, $size);
+  // border: $value;
+
+  @if $value == null {
+    @error "#{$size} is not a valid font size name";
+  } @else {
+    font-size: $value;
+  }
+  
+}

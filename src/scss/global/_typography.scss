@@ -1,0 +1,27 @@
+html {
+  font-size: $font-size-mobile;
+  box-sizing: border-box;
+
+  @include media(md) {
+    font-size: $font-size-desktop;
+  }
+}
+
+body {
+  font-family: $font-family-base;
+}
+
+h1 {
+  @include fs(huge);
+}
+
+h2 {
+  @include fs(large);
+}
+
+h3 {
+  @include fs(medium);
+}
+h1, h2, h3 {
+  letter-spacing: .05em;
+}

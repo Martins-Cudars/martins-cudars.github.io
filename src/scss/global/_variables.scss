@@ -1,0 +1,24 @@
+$breakpoints: (
+  'sm': 540px,
+  'md': 720px,
+  'lg' : 960px,
+  'laptop': 1366px,
+  'xxl': 1920px,
+  'desktop' : 960px,
+);
+
+$container-width: 1200px;
+
+
+$font-family-base: 'Poppins', sans-serif;
+$font-size-mobile: 14px;
+$font-size-desktop: 16px;
+
+$font-sizes: (
+  'massive': 3rem, // default rendered font size is 40px
+  'huge': 2rem, // default rendered font size is 32px
+  'large': 1.5rem, // default rendered font size is 24px
+  'medium': 1.125rem, // default rendered font size is 18px
+  'small': .875rem, // default rendered font size is 14px
+  'smallest': .75rem, // default rendered font size is 12px
+);

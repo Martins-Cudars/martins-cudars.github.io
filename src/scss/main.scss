@@ -1,9 +1,33 @@
+/* Import normalize */
 @import '../../node_modules/normalize-scss/sass/normalize/import-now';
+
+/* Import variables */
+@import 'global/variables';
+
+/* Import mixins for media queries, font sizes etc */
+@import 'global/mixins';
+
+/* Import general typography settings */
+@import 'global/typography';
+
+
+
+
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+
 
 
 .block__inner {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .text-center {
