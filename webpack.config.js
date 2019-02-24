@@ -37,6 +37,10 @@ module.exports = {
                 { loader: 'resolve-url-loader'},
                 { loader: 'sass-loader', options: { sourceMap: true } }
             ]
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader'
       }
     ]
   },
