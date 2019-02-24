@@ -1,1 +1,17 @@
 @import '../../node_modules/normalize-scss/sass/normalize/import-now';
+
+
+.block__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
