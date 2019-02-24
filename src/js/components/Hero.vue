@@ -30,7 +30,7 @@ export default {
   methods: {
     getStyle: function() {
       this.style.backgroundColor = this.hero.backgroundColor
-      this.style.backgroundImage = 'url("' + this.hero.image + '")'
+      // this.style.backgroundImage = 'url("' + this.hero.image + '")'
     }
   },
   mounted () {
@@ -46,17 +46,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+  @import '../../scss/global/variables';
+  @import '../../scss/global/mixins';
+  
   .block-hero {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    z-index: 100;
+    // z-index: 100;
     color: #fff;
     overflow: hidden;
 
@@ -67,32 +66,54 @@ export default {
       height: 100%;
       z-index: 150;
       text-align: center;
+      position: relative;
       // background: green;
 
 
 
     }
 
+    &:before,
     &:after {
       display: block;
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: transparentize(#000, 0.65);
-      z-index: -1;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+    }
+    &:before {
+      background-image:url('../../img/blocks/hero-bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      filter: blur(0.1rem);
+    }
+    &:after {
+      background-color: transparentize(#000, 0.55);
+      // z-index: -1;
     }
 
     &__logo {
         max-width: 280px;
         margin: 0 auto;
     }
+
+    &__title {
+      @include fs(massive);
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+
+    &__subtitle {
+      @include fs(large);
+      text-transform: uppercase;
+      margin: 0;
+      letter-spacing: .1em;
+    }
   }
 
   .slide-left-enter-active, .slide-left-leave-active {
-    transition: transform 2s ease-in-out;
+    transition: transform 1.5s ease-in-out;
   }
 
   .slide-left-enter, .slide-left-leave-to {
