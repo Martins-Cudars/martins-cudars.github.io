@@ -82,11 +82,15 @@ export default {
       width: 100%; height: 100%;
     }
     &:before {
-      background-image:url('../../img/blocks/hero-bg.jpg');
+      background-image: url('../../../img/blocks/hero-bg-720.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment: fixed;
       filter: blur(0.1rem);
+      
+      @include media(md) {
+         background-image: url('../../../img/blocks/hero-bg-1920.jpg');
+      }
     }
     &:after {
       background-color: transparentize(#000, 0.55);
