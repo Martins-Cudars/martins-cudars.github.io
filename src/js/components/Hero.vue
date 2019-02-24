@@ -1,0 +1,101 @@
+<template>
+  <section class="block block-hero" :style="style">
+    <transition name="slide-left">
+    <div class="block__inner block-hero__inner" v-if="loaded">
+      <img :src="hero.logo" :alt="hero.title" class="block-hero__logo">
+      <h1 v-html="hero.title" class="block-hero__title"></h1>
+      <p v-html="hero.subtitle" class="block-hero__subtitle"></p>  
+    </div>
+    </transition>
+  </section>
+</template>
+
+<script>
+// import axios from 'axios';
+
+export default {
+
+  name: 'Hero',
+
+  data () {
+    return {
+      hero: '',
+      style: {
+        backgroundImage: '',
+        backgroundColor: ''
+      },
+      loaded: false
+    }
+  },
+  methods: {
+    getStyle: function() {
+      this.style.backgroundColor = this.hero.backgroundColor
+      this.style.backgroundImage = 'url("' + this.hero.image + '")'
+    }
+  },
+  mounted () {
+    this.$http
+      .get('http://127.0.0.1:4000/jekyll-rest-api/blocks/hero.json')
+      .then(response => (
+        this.hero = response.data[0],
+        this.getStyle(),
+        this.loaded = true
+      ))
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+
+  .block-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 100;
+    color: #fff;
+    overflow: hidden;
+
+    &__inner {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      height: 100%;
+      z-index: 150;
+      text-align: center;
+      // background: green;
+
+
+
+    }
+
+    &:after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: transparentize(#000, 0.65);
+      z-index: -1;
+    }
+
+    &__logo {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+  }
+
+  .slide-left-enter-active, .slide-left-leave-active {
+    transition: transform 2s ease-in-out;
+  }
+
+  .slide-left-enter, .slide-left-leave-to {
+    transform: translateX(100%);
+  }
+</style>
