@@ -1,0 +1,12 @@
+---
+---
+[
+  {
+    "image": "{{ site.data.hero.background-image }}",
+    "backgroundColor": "{{ site.data.hero.background-color }}",
+    "logo": "{{ site.data.hero.logo }}",
+    "title": "{{ site.data.hero.title }}",
+    "subtitle": "{{ site.data.hero.subtitle }}"
+
+  }
+]

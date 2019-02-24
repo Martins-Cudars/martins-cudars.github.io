@@ -35,7 +35,7 @@ export default {
   },
   mounted () {
     this.$http
-      .get('/jekyll-rest-api/blocks/hero.json')
+      .get('/rest/blocks/hero.json')
       .then(response => (
         this.hero = response.data[0],
         this.getStyle(),
