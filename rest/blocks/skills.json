@@ -1,0 +1,18 @@
+---
+---
+[
+  {% for skillGroup in site.data.skills %}
+  {
+    "name": "{{ skillGroup.type}}",
+    "skills": [
+    {% for skill in skillGroup.skills %}
+    {
+      "name": "{{ skill.name }}",
+      "value": "{{ skill.value }}"
+    }{% if forloop.last %}{% else %},{% endif %}
+    {% endfor %}
+    ]
+  }{% if forloop.last %}{% else %},{% endif %}
+  {% endfor %} 
+]
+

@@ -1,0 +1,31 @@
+- type: Frontend
+  skills:
+  - name: CSS
+    value: 90
+  - name: SCSS
+    value: 90 
+  - name: JavaScript
+    value: 75
+  - name: HTML5
+    value: 90
+- type: Backend
+  skills:
+    - name: PHP
+      value: 65
+    - name: Ruby
+      value: 35
+    - name: MySQL
+      value: 50
+- type: CMS/Platforms
+  skills:
+    - name: WordPress
+      value: 80
+    - name: WooCommerce
+      value: 70
+    - name: HubSpot
+      value: 85
+    - name: PrestaShop
+      value: 60
+    - name: Jeykll
+      value: 50
+
