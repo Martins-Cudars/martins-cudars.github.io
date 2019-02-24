@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: './src/js/main.js',
@@ -33,14 +33,10 @@ module.exports = {
         test: /\.scss$/,
             use: [
                 { loader: MiniCssExtractPlugin.loader, options: { publicPath: '../dist' } },
-                { loader: 'css-loader', options: { sourceMap: true } },
+                { loader: 'css-loader', options: { url: false, sourceMap: false } },
                 { loader: 'resolve-url-loader'},
-                { loader: 'sass-loader', options: { sourceMap: true } }
+                { loader: 'sass-loader', options: { sourceMap: false } }
             ]
-      },
-      {
-        test: /\.(png|jpg)$/,
-        loader: 'url-loader'
       }
     ]
   },
@@ -53,9 +49,18 @@ module.exports = {
     plugins: [
       new VueLoaderPlugin(),
       new MiniCssExtractPlugin({
-        filename: "../css/[name].css"
+        filename: "../css/[name].css",
+        publicPath: '../../'
         // chunkFilename: "[id].css"
       }),
+      // new OptimizeCssAssetsPlugin({
+      //   assetNameRegExp: /\.css$/g,
+      //   cssProcessor: require('cssnano'),
+      //   cssProcessorPluginOptions: {
+      //   preset: ['default', { discardComments: { removeAll: true } }],
+      // },
+      //   canPrint: true
+      // })
   ]
 }
 
