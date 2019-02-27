@@ -1,6 +1,8 @@
 <template>
   <div class="skill">
-    {{ skill.name }} {{ skill.value}}
+    <div class="skill__bar">
+     <div class="skill__bar__inner" :style="{width: skill.value + '%'}">{{ skill.name }}</div>
+    </div>
   </div>
 </template>
 
@@ -17,9 +19,24 @@ export default {
     return {
 
     }
-  }
+  },
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+@import '../../scss/global/variables';
+  .skill {
+    margin: .5rem 0;
+
+    &__bar {
+      border: 1px solid darken($blue, 5%);
+    }
+
+    &__bar__inner {
+      background-color: $blue;
+      transition: width .5s ease-in-out;
+      color: $white;
+      padding: .125rem 1rem;
+    }
+  }
 </style>
