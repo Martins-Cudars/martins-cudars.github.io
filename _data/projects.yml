@@ -1,0 +1,48 @@
+- name: Manpower.lv
+  description: <p>WordPress site for one of the World's leading Recruiting
+   Agencies. Uses custom post type and custom fields for job ads. Responsive</p>
+  url: http://manpower.lv
+  logo: img/blocks/projects/manpower/manpower-logo.png
+  screenshot: img/blocks/projects/manpower/manpower-screenshot.png
+  technologies:
+    - wordpress
+    - php
+    - jquery.js
+
+- name: Virsotne.lv
+  description: Lorem Ipsum
+  url: http://manpower.lv
+  logo: img/blocks/projects/manpower/manpower-logo.png
+  screenshot: img/blocks/projects/manpower/manpower-screenshot.png
+  technologies:
+    - prestashop
+    - php
+    - jquery.js
+
+- name: decallab.com
+  description: Lorem Ipsum
+  url: http://manpower.lv
+  logo: img/blocks/projects/manpower/manpower-logo.png
+  screenshot: img/blocks/projects/manpower/manpower-screenshot.png
+  technologies:
+    - wordpress
+    - woocommerce
+    - php
+    - jquery.js
+
+- name: AppXite.com
+  description: Lorem Ipsum
+  url: http://manpower.lv
+  logo: img/blocks/projects/manpower/manpower-logo.png
+  screenshot: img/blocks/projects/manpower/manpower-screenshot.png
+  technologies:
+    - HubSpot
+    - Hubl / Jinja
+    - jquery.js
+
+    
+
+
+
+
+
