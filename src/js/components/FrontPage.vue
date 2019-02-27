@@ -3,6 +3,8 @@
     <hero></hero>
     <bio></bio>
     <skills></skills>
+    <!-- <references></references> -->
+    <projects></projects>
   </main>
 </template>
 
@@ -10,6 +12,8 @@
 import Hero from './Hero'
 import Bio from './Bio'
 import Skills from './Skills'
+// import References from './References'
+import Projects from './Projects'
 
 
 export default {
@@ -18,7 +22,9 @@ export default {
   components: {
     Hero,
     Bio,
-    Skills
+    Skills,
+    // References,
+    Projects,
   },
   data () {
     return {

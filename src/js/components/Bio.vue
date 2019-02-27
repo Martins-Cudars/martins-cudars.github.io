@@ -1,6 +1,7 @@
 <template>
   <section class="block block-bio">
-    <div class="block__inner bio__inner" v-html="content">
+    <div class="block__inner bio__inner">
+      <div class="block-bio__content" v-html="content"></div>
     </div>
   </section>
 </template>
@@ -27,5 +28,12 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+@import '../../scss/global/variables';
+  .block-bio {
+    &__content {
+      max-width: 720px;
+      width: 100%;
+    }
+  }
 </style>

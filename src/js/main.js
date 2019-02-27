@@ -7,13 +7,14 @@ Vue.prototype.$http = axios
 
 
 import FrontPage from './components/FrontPage'
-
+import SiteFooter from './components/SiteFooter'
 
 var vm = new Vue({
 
   el: "#app",
   components: {
     FrontPage,
+    SiteFooter
   }
 
 })
