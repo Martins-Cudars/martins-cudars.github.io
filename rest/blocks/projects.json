@@ -1,0 +1,19 @@
+---
+---
+[
+  {% for project in site.data.projects %}
+  {
+    "name": "{{ project.name }}",
+    "description": "{{ project.description }}",
+    "url": "{{ project.url }}",
+    "logo": "{{ project.logo }}",
+    "screenshot": "{{ project.screenshot }}",
+    "technologies": [
+    {% for tech in project.technologies %}
+      "{{ tech }}"{% if forloop.last %}{% else %},{% endif %}
+    {% endfor %}
+    ]
+  }{% if forloop.last %}{% else %},{% endif %}
+  {% endfor %} 
+]
+
