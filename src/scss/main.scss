@@ -10,7 +10,8 @@
 /* Import general typography settings */
 @import 'global/typography';
 
-
+/* Import components, but a lot of styles are inside Vue components */
+@import 'components/buttons';
 
 
 
@@ -27,7 +28,7 @@
 .block__inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
 }
 
 .text-center {
