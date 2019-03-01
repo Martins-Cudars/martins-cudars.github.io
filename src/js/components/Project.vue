@@ -120,6 +120,18 @@ export default {
       }
     }
 
+    &__buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .btn {
+        & + .btn {
+          margin-left: 1rem;
+        }
+      }
+    }
+
     &:hover {
       .card__inner {
         transform: rotateY(180deg);
