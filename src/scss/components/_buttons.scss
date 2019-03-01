@@ -6,6 +6,7 @@
   text-transform: uppercase;
   padding: .5em 1em;
   cursor: pointer;
+  outline: 0;
 }
 
 .btn-small {
@@ -20,4 +21,9 @@
   &:hover {
     background-color: darken($main, 5%);
   }
+}
+
+.btn-ghost {
+  border: 0;
+  background-color: transparent;
 }

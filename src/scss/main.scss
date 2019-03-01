@@ -12,7 +12,7 @@
 
 /* Import components, but a lot of styles are inside Vue components */
 @import 'components/buttons';
-
+@import 'components/icons';
 
 
 *,
@@ -21,6 +21,9 @@
   box-sizing: inherit;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
 
 
 
