@@ -9,23 +9,33 @@
         </project>
       </div>
     </div>
+     <overlay :image="activeImage" ref="overlay" type="image"></overlay>
   </section>
 </template>
 
 <script>
 import Project from './Project'
-// import Overlay from './Overlay' // will add later
+import Overlay from './Overlay' // will add later
 
 export default {
 
   name: 'Projects',
   components: {
-    Project
+    Project, Overlay
   },
   data () {
     return {
       projects: '',
-      loaded: false
+      loaded: false,
+      activeImage: null
+    }
+  },
+  methods: {
+    setActiveImage: function( newImage ) {
+      this.activeImage = newImage;
+      // this.overlayActive = true;
+      this.$refs.overlay.openOverlay();
+      console.log(newImage);
     }
   },
   mounted () {

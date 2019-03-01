@@ -13,19 +13,18 @@
         </div>
         <div class="card__buttons">
           <a class="btn btn-small btn-main card__btn" :href="project.url" target="_blank">LIVE SITE</a>
-          <!-- <button class="btn btn-small btn-main card__btn">Screenshot</button> -->
+          <button class="btn btn-small btn-main card__btn" v-on:click="setActiveImage(project.screenshot)">Screenshot</button>
         </div>
-    <!-- <img :src="project.screenshot"> -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
+
 export default {
 
   name: 'Project',
-
   data () {
     return {
 
@@ -36,7 +35,13 @@ export default {
       type: Object,
 
     }
+  },
+  methods: {
+    setActiveImage(newImage){
+        this.$parent.setActiveImage(newImage);
+    }
   }
+
 }
 </script>
 
