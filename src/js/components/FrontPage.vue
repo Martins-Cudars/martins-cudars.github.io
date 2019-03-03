@@ -5,6 +5,7 @@
     <skills></skills>
     <!-- <references></references> -->
     <projects></projects>
+    <!-- <contact></contact> -->
   </main>
 </template>
 
@@ -14,7 +15,9 @@ import Bio from './Bio'
 import Skills from './Skills'
 // import References from './References'
 import Projects from './Projects'
-
+// import Contact from './Contact' 
+/* Not sure if I like formspree 
+ because it distrupts the UX and I dont want to pay 10 EUR / Month to have Ajax */  
 
 export default {
 
@@ -25,6 +28,7 @@ export default {
     Skills,
     // References,
     Projects,
+    // Contact,
   },
   data () {
     return {
