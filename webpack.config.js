@@ -3,6 +3,7 @@ const webpack = require('webpack')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   entry: './src/js/main.js',
@@ -10,7 +11,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist/js'),
     filename: 'main.js'
   },
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [
       {
@@ -42,7 +43,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      vue$: 'vue/dist/vue.js'
+      vue$: 'vue/dist/vue.min.js'
     },
     extensions: ['*', '.js', '.vue', '.json']
   },
@@ -53,6 +54,7 @@ module.exports = {
         publicPath: '../../'
         // chunkFilename: "[id].css"
       }),
+      new BundleAnalyzerPlugin(),
       // new OptimizeCssAssetsPlugin({
       //   assetNameRegExp: /\.css$/g,
       //   cssProcessor: require('cssnano'),
