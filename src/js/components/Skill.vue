@@ -29,11 +29,11 @@ export default {
     margin: .5rem 0;
 
     &__bar {
-      border: 1px solid darken($blue, 5%);
+      border: 1px solid darken($main, 8%);
     }
 
     &__bar__inner {
-      background-color: $blue;
+      background-color: $main;
       transition: width .5s ease-in-out;
       color: $white;
       padding: .125rem 1rem;
