@@ -3,7 +3,7 @@
     <div class="card__inner">
       <div class="card__front" :style="{ backgroundColor: project.background }">
         <h2 class="card__title" v-html="project.name"></h2>
-        <img class="card__logo" :src="project.logo" :alt="project.name">
+        <img class="card__logo" v-lazy="project.logo" :alt="project.name">
       </div>
       <div class="card__back">
         <h2 class="card__title" v-html="project.name"></h2>
