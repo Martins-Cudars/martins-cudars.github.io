@@ -3,46 +3,102 @@
    Agencies. Uses custom post type and custom fields for job ads. Responsive</p>
   url: http://manpower.lv
   logo: img/blocks/projects/manpower/manpower-logo.png
-  screenshot: img/blocks/projects/manpower/manpower-screenshot.png
+  background: '#ffffff'
+  screenshot: img/blocks/projects/manpower/manpower-screenshot.jpg
   technologies:
-    - wordpress
-    - php
-    - jquery.js
+    - WordPress
+    - PHP
+    - JavaScript
+    - jQuery
 
 - name: Virsotne.lv
-  description: Lorem Ipsum
-  url: http://manpower.lv
-  logo: img/blocks/projects/manpower/manpower-logo.png
-  screenshot: img/blocks/projects/manpower/manpower-screenshot.png
+  description: <p>Prestashop E-Commerce site. These guys specialize in
+    alpinism equipment.</p>
+  url: https://virsotne.lv
+  logo: img/blocks/projects/virsotne/virsotne-logo.png
+  background: '#20222e'
+  screenshot: img/blocks/projects/virsotne/virsotne-screenshot.jpg
   technologies:
     - prestashop
-    - php
-    - jquery.js
+    - PHP
+    - jQuery
 
 - name: decallab.com
-  description: Lorem Ipsum
-  url: http://manpower.lv
-  logo: img/blocks/projects/manpower/manpower-logo.png
-  screenshot: img/blocks/projects/manpower/manpower-screenshot.png
+  description: <p>E-Commerce site for decallab, company which designs and produces
+   decalls and clothing for motocross teams all around the world</p>
+  url: https://www.manpower.eu
+  logo: img/blocks/projects/decallab/decallab-logo.svg
+  background: '#ffffff'
+  screenshot: img/blocks/projects/decallab/decallab-screenshot.jpg
   technologies:
-    - wordpress
+    - WordPress
     - woocommerce
-    - php
-    - jquery.js
+    - PHP
+    - JavaScript
+    - jQuery
 
 - name: AppXite.com
-  description: Lorem Ipsum
-  url: http://manpower.lv
-  logo: img/blocks/projects/manpower/manpower-logo.png
-  screenshot: img/blocks/projects/manpower/manpower-screenshot.png
+  description: <p>HubSpot site for AppXite.com - international SaaS Cloud business.</p>
+  url: https://appxite.com
+  logo: img/blocks/projects/appxite/appxite-logo.webp
+  background: '#ffffff'
+  screenshot: img/blocks/projects/appxite/appxite-screenshot.jpg
   technologies:
     - HubSpot
     - Hubl / Jinja
-    - jquery.js
+    - JavaScript
+    - jQuery
+    - Vue.js
 
-    
+- name: CSP2GO.com
+  description: <p>HubSpot site for B2B project CSP2GO.com.</p>
+  url: https://csp2go.com
+  logo: img/blocks/projects/csp2go/csp2go-logo.webp
+  background: '#ffffff'
+  screenshot: img/blocks/projects/csp2go/csp2go-screenshot.jpg
+  technologies:
+    - HubSpot
+    - Hubl / Jinja
+    - JavaScript
+    - jQuery
 
+- name: IBM2Go
+  description: <p>Site for IBM Cloud offering using HubSpot CMS/Marketing platform</p>
+  url: https://appxite.com/ibm-cloud
+  logo: img/blocks/projects/ibm2go/ibm2go-logo.webp
+  background: '#0f1015'
+  screenshot: img/blocks/projects/ibm2go/ibm2go-screenshot.jpg
+  technologies:
+    - HubSpot
+    - Hubl / Jinja
+    - JavaScript
+    - jQuery
 
+- name: hokejaveikals.lv
+  description: <p>Ice Hockey E-Commerce Site. I developed the mobile version of the site.</p>
+    <p>Note - desktop site is not developed by me.</p>
+  url: https://hokejaveikals.lv
+  logo: img/blocks/projects/hokejaveikals/hokejaveikals-logo.svg
+  background: '#0056b8'
+  screenshot: img/blocks/projects/hokejaveikals/hokejaveikals-screenshot.jpg
+  technologies:
+    - Prestashop
+    - PHP
+    - JavaScript
+    - jQuery
+
+- name: db.konferences.lv
+  description: <p>Site for conferences, managed by Dienas Bizness.</p>
+    <p>Developed and deployed in 2015, still alive and active.</p>
+  url: http://konferences.db.lv/
+  logo: img/blocks/projects/konferences/konferences-logo.png
+  background: '#FFF5EA'
+  screenshot: img/blocks/projects/konferences/konferences-screenshot.jpg
+  technologies:
+    - WordPress
+    - PHP
+    - JavaScript
+    - jQuery
 
 
 

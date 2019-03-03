@@ -1,7 +1,7 @@
 <template>
   <div class="card card-project">
     <div class="card__inner">
-      <div class="card__front">
+      <div class="card__front" :style="{ backgroundColor: project.background }">
         <h2 class="card__title" v-html="project.name"></h2>
         <img class="card__logo" :src="project.logo" :alt="project.name">
       </div>
@@ -27,7 +27,6 @@ export default {
   name: 'Project',
   data () {
     return {
-
     }
   },
   props: {
@@ -40,14 +39,14 @@ export default {
     setActiveImage(newImage){
         this.$parent.setActiveImage(newImage);
     }
-  }
+  },
 
 }
 </script>
 
 <style lang="scss" scoped>
 @import '../../scss/global/variables';
-
+@import '../../scss/global/mixins';
   .card {
     perspective: 1000px;
     background-color: transparent;
@@ -70,17 +69,18 @@ export default {
       width: 100%;
       height: 100%;
       backface-visibility: hidden;
-      color: $main;
     }
 
     &__front {
-      background-color: $white;
+      // background-color: $black;
+      // background-color: lighten($main, 1%);
     }
 
     &__back {
       background-color: $white;
       transform: rotateY(180deg);
       padding-bottom: 1rem;
+      color: $main;
     }
 
     &__title {
@@ -114,6 +114,8 @@ export default {
       border: 1px solid $main;
       padding: .25rem;
       margin-top: .5rem;
+
+      @include fs(small);
 
       &:not(:last-child) {
         margin-right: .5rem;

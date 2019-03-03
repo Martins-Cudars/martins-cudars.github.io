@@ -2,7 +2,7 @@
   <section class="block block-projects">
     <div class="block__inner block-projects__inner">
       <h1>Projects</h1>
-      <p>Showcase of my work. If you are visiting the github page in early march, I have not added all content yet.</p>
+      <p>Showcase of my work. Not all of my works are displayed here, but each one them has their own story.</p>
       <div class="block-projects__content">
         <project v-for="(project, index) in projects" :project="project" :key="index">
 
@@ -52,7 +52,7 @@ export default {
 <style lang="scss" scoped>
 @import '../../scss/global/variables';
   .block-projects {
-    background-color: darken($blue, 8%);
+    background-color: darken($main, 8%);
     color: $white;
 
     &__content {

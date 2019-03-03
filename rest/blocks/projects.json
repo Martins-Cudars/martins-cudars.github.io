@@ -7,6 +7,7 @@
     "description": "{{ project.description }}",
     "url": "{{ project.url }}",
     "logo": "{{ project.logo }}",
+    "background": "{{ project.background }}",
     "screenshot": "{{ project.screenshot }}",
     "technologies": [
     {% for tech in project.technologies %}
