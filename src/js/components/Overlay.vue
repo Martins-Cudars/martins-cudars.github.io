@@ -30,12 +30,10 @@ export default {
   },
   methods: {
     closeOverlay: function() {
-      console.log('close overlay');
       this.active = false;
       document.getElementsByTagName('body')[0].classList.remove('no-scroll');
     },
     openOverlay: function() {
-      console.log('open overlay');
       this.active = true;
       document.getElementsByTagName('body')[0].classList.add('no-scroll');
     },
@@ -52,6 +50,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../scss/global/variables';
+@import '../../scss/global/mixins';
 
   .fade-enter-active, .fade-leave-active {
     transition: opacity .75s ease-in-out;
@@ -66,9 +65,13 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 1rem;
-    background-color: transparentize($black, .25);
+    padding: 4rem 1rem;
+    background-color: transparentize($black, .1);
     z-index: 1000;
+
+    @include media(lg) {
+      padding: 4rem 2rem;
+    }
 
     &__image {
       margin: 0 auto;
