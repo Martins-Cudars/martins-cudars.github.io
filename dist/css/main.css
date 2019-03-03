@@ -711,11 +711,11 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
 }
-.card[data-v-88e5992a] {
+.card[data-v-e814b9a8] {
   perspective: 1000px;
   background-color: transparent;
 }
-.card__inner[data-v-88e5992a] {
+.card__inner[data-v-e814b9a8] {
   position: relative;
   width: 100%;
   height: 100%;
@@ -724,8 +724,8 @@ img {
   transform-style: preserve-3d;
   box-shadow: 0px 0px 1px 1px rgba(7, 7, 10, 0.5);
 }
-.card__front[data-v-88e5992a],
-.card__back[data-v-88e5992a] {
+.card__front[data-v-e814b9a8],
+.card__back[data-v-e814b9a8] {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -733,53 +733,53 @@ img {
   height: 100%;
   backface-visibility: hidden;
 }
-.card__back[data-v-88e5992a] {
+.card__back[data-v-e814b9a8] {
   background-color: #E2E2E2;
   transform: rotateY(180deg);
   padding-bottom: 1rem;
   color: #1B2749;
 }
-.card__title[data-v-88e5992a] {
+.card__title[data-v-e814b9a8] {
   background-color: #1B2749;
   color: #E2E2E2;
   margin: 0;
   padding: 1rem;
 }
-.card__logo[data-v-88e5992a] {
+.card__logo[data-v-e814b9a8] {
   display: block;
   max-width: 80%;
   height: auto;
   margin: auto;
 }
-.card__description[data-v-88e5992a] {
+.card__description[data-v-e814b9a8] {
   text-align: left;
   padding: 0rem 1rem;
   margin-bottom: auto;
 }
-.card__tech[data-v-88e5992a] {
+.card__tech[data-v-e814b9a8] {
   display: flex;
   flex-wrap: wrap;
   padding: .25rem 1rem;
   margin-bottom: 1rem;
 }
-.card__tech__item[data-v-88e5992a] {
+.card__tech__item[data-v-e814b9a8] {
   border: 1px solid #1B2749;
   padding: .25rem;
   margin-top: .5rem;
   font-size: 0.875rem;
 }
-.card__tech__item[data-v-88e5992a]:not(:last-child) {
+.card__tech__item[data-v-e814b9a8]:not(:last-child) {
   margin-right: .5rem;
 }
-.card__buttons[data-v-88e5992a] {
+.card__buttons[data-v-e814b9a8] {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card__buttons .btn + .btn[data-v-88e5992a] {
+.card__buttons .btn + .btn[data-v-e814b9a8] {
   margin-left: 1rem;
 }
-.card:hover .card__inner[data-v-88e5992a] {
+.card:hover .card__inner[data-v-e814b9a8] {
   transform: rotateY(180deg);
 }
 .fade-enter-active[data-v-04d2b31e],
