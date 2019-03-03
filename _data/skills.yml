@@ -28,4 +28,33 @@
       value: 60
     - name: Jeykll
       value: 50
-
+- type: Languages
+  skills:
+    - name: Latvian
+      value: 90
+    - name: English
+      value: 85
+    - name: German
+      value: 50
+    - name: Russian
+      value: 50
+- type: Project management
+  skills:
+    - name: Jira
+      value: 75
+    - name: Trello
+      value: 90
+    - name: Teams
+      value: 75
+- type: Software
+  skills:
+    - name: Linux Mint / Ubuntu
+      value: 75
+    - name: Windows 10
+      value: 75
+    - name: Sublime Text
+      value: 85
+    - name: Vagrant
+      value: 55
+    - name: Docker
+      value: 25
