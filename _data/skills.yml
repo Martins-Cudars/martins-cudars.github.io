@@ -26,7 +26,7 @@
       value: 85
     - name: PrestaShop
       value: 60
-    - name: Jeykll
+    - name: Jekyll
       value: 50
 - type: Languages
   skills:

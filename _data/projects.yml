@@ -32,7 +32,7 @@
   screenshot: img/blocks/projects/decallab/decallab-screenshot.jpg
   technologies:
     - WordPress
-    - woocommerce
+    - WooCommerce
     - PHP
     - JavaScript
     - jQuery
