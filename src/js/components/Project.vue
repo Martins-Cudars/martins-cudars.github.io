@@ -71,11 +71,6 @@ export default {
       backface-visibility: hidden;
     }
 
-    &__front {
-      // background-color: $black;
-      // background-color: lighten($main, 1%);
-    }
-
     &__back {
       background-color: $white;
       transform: rotateY(180deg);
@@ -93,6 +88,7 @@ export default {
     &__logo {
       display: block;
       max-width: 80%;
+      width: fit-content;
       height: auto;
       margin: auto;
     }
