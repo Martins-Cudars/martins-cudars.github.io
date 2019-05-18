@@ -55,7 +55,6 @@ export default {
     align-items: center;
     position: relative;
     min-height: 100vh;
-    // z-index: 100;
     color: #fff;
     overflow: hidden;
 
@@ -67,10 +66,6 @@ export default {
       z-index: 150;
       text-align: center;
       position: relative;
-      // background: green;
-
-
-
     }
 
     &:before,
@@ -98,7 +93,7 @@ export default {
     }
 
     &__logo {
-        max-width: 280px;
+        width: 280px;
         margin: 0 auto;
     }
 
