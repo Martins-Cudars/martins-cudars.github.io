@@ -620,7 +620,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.block-hero[data-v-586e5047] {
+.block-hero[data-v-0805b845] {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -629,7 +629,7 @@ img {
   color: #fff;
   overflow: hidden;
 }
-.block-hero__inner[data-v-586e5047] {
+.block-hero__inner[data-v-0805b845] {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -638,8 +638,8 @@ img {
   text-align: center;
   position: relative;
 }
-.block-hero[data-v-586e5047]:before,
-.block-hero[data-v-586e5047]:after {
+.block-hero[data-v-0805b845]:before,
+.block-hero[data-v-0805b845]:after {
   display: block;
   content: "";
   position: absolute;
@@ -648,7 +648,7 @@ img {
   width: 100%;
   height: 100%;
 }
-.block-hero[data-v-586e5047]:before {
+.block-hero[data-v-0805b845]:before {
   background-image: url("../../../img/blocks/hero/hero-bg-720.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -656,34 +656,34 @@ img {
   filter: blur(0.1rem);
 }
 @media (min-width: 720px) {
-.block-hero[data-v-586e5047]:before {
+.block-hero[data-v-0805b845]:before {
     background-image: url("../../../img/blocks/hero/hero-bg-1920.jpg");
 }
 }
-.block-hero[data-v-586e5047]:after {
+.block-hero[data-v-0805b845]:after {
   background-color: rgba(0, 0, 0, 0.45);
 }
-.block-hero__logo[data-v-586e5047] {
-  max-width: 280px;
+.block-hero__logo[data-v-0805b845] {
+  width: 280px;
   margin: 0 auto;
 }
-.block-hero__title[data-v-586e5047] {
+.block-hero__title[data-v-0805b845] {
   font-size: 3rem;
   text-transform: uppercase;
   margin-bottom: 0;
 }
-.block-hero__subtitle[data-v-586e5047] {
+.block-hero__subtitle[data-v-0805b845] {
   font-size: 1.5rem;
   text-transform: uppercase;
   margin: 0;
   letter-spacing: .1em;
 }
-.slide-left-enter-active[data-v-586e5047],
-.slide-left-leave-active[data-v-586e5047] {
+.slide-left-enter-active[data-v-0805b845],
+.slide-left-leave-active[data-v-0805b845] {
   transition: transform 1.5s ease-in-out;
 }
-.slide-left-enter[data-v-586e5047],
-.slide-left-leave-to[data-v-586e5047] {
+.slide-left-enter[data-v-0805b845],
+.slide-left-leave-to[data-v-0805b845] {
   transform: translateX(100%);
 }
 .block-bio__content[data-v-f64c072a] {
